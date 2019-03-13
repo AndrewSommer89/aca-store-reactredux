@@ -17,3 +17,10 @@ We have built a perfectly operational ecommerce web app. We are using webpack bu
 * connect the component to redux connect(mapStateToProps)
 * Default export the connected component
 * Does the ProductList component itself have any idea that redux exists?
+
+# ProductDetail.js
+* Import connect from react-redux
+* Remove the default export of the ProductList component
+* mapDispatchToProps  - map to the prop addToCart a function that takes one argument being a product. It should return an action message with type "ADD_PRODUCT_TO_CART"
+* connect the component to redux connect(null,mapDispatchToProps)
+* Default export the connected component
